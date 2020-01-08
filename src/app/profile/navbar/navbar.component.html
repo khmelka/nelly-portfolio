@@ -1,17 +1,21 @@
 <div class="wrapper">
   <!-- Sidebar -->
   <nav id="sidebar">
-      <div class="sidebar-header">
-          <li>
+      
+    <div class="pic-header">
+         
             <div class="rounded-circle">
               <img src="../../../assets/images/DSC_1749.JPG" id="img">
             </div>  
-          </li>
-      </div>
-      <p class="myName" [ngStyle]="{'color': 'blue', 'text-align': 'center'}">Nelly Khmeleva</p>
-      <ul class="list-unstyled components" [ngStyle]="{'text-align': 'center'}">
+        
+        </div>
+
+        <p class="myName" >Nelly Khmeleva</p>
+
+      <div class="test">
+      <ul >
         <li >
-          <a  href="#about">About</a>
+          <a  href="#about"><i class="fas fa-user"></i>    About</a>
         </li>
         <li >
           <a  href="#skills" ><i class="fas fa-briefcase"></i>    Skills</a>
@@ -20,12 +24,31 @@
             <a  href="#projects" ><i class="fas fa-copy"></i>   Projects</a>
           </li>
           <li >
-            <a  href="#blogs"blogs ><i class="fas fa-copy"></i>   Blogs</a>
+            <a  href="#blogs"blogs ><i class="fas fa-cogs"></i>   Blogs</a>
           </li>
       </ul>
-      <li><a id="toggle" class="waves-effect"><i class="sv-slim-icon fas fa-angle-double-left"></i>Minimize
-        menu</a>
-    </li>
+    </div>
+
+
+         <div class='iconContainer'>
+           <div [ngStyle]="{'text-align': 'center', 'zoom': '1.2'}">
+           
+            <a class="btn btn-default " href="nkhmeleva@yahoo.com"
+            title="Email">
+            <i class="far fa-envelope"></i>
+          </a>
+          <a class="btn btn-default " href="https://twitter.com/MehulKo18943279"
+            title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+            
+          <a class="btn btn-default " href="#"
+            title="Resume">
+            <i class="fas fa-file-alt"></i>
+          </a>
+            
+            </div>
+         </div>
   </nav>
 
 </div>

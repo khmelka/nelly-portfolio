@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './profile/navbar/navbar.component';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AboutComponent } from './profile/about/about.component';
 import { SkillsComponent } from './profile/skills/skills.component';
 import { ProjectsComponent } from './profile/projects/projects.component';
@@ -27,8 +26,7 @@ import { BlogsComponent } from './profile/blogs/blogs.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule.forRoot(),
-    MDBBootstrapModule.forRoot()
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

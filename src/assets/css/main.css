@@ -1,3 +1,11 @@
+body {
+    background-image: url(https://i.pinimg.com/originals/33/6e/1f/336e1ffa3b6b0e8f7a60d9f64de7ea81.jpg);
+    display: content;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
 .wrapper {
     display: flex;
     align-items: stretch;
@@ -8,20 +16,30 @@
 #sidebar {
     min-width: 230px;
     min-height: 100vh;
-    background: rgb(156, 218, 171);
+    background: rgba(204, 8, 8, 0.705);
     color: #fff;
     transition: all 0.3s;
 }
 
-.sidebar-header{
+.pic-header{
     /* margin-left: 25px; */
+    padding-top: 50px;
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
-    background: rgb(156, 218, 171);
+    /* padding: 20px; */
+    background: rgba(204, 8, 8, 0.151);
 }
 
+.myName {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+}
 /* #sidebar.active {
     margin-left: -250px;
 }
@@ -35,25 +53,58 @@
     }
 } */
 
-body {
-    font-family: 'Poppins', sans-serif;
-}
 
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
 }
 
-a, a:hover, a:focus {
-    color: inherit;
+
+#sidebar ul li a {
+    color: white;
+    text-transform: uppercase;
     text-decoration: none;
-    transition: all 0.3s;
-}
+    letter-spacing: 0.15em;
+    list-style-type: none;  
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    margin-bottom: 0;
+  }
 
-#sidebar ul.components {
+#sidebar ul li a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+#sidebar ul li a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+/* #sidebar ul li a {
+    padding: 20px;
+    font-s ize: 1.1em;
+    display: block;
+    color: white;
+} */
+
+/* #sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+} */
+
+/* #sidebar ul.components {
     padding: 20px 0;
 }
 
@@ -66,6 +117,7 @@ a, a:hover, a:focus {
     padding: 10px;
     font-size: 1.1em;
     display: block;
+    color: white;
 }
 #sidebar ul li a:hover {
     color: #7386D5;
@@ -80,15 +132,17 @@ ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
     background: #6d7fcc;
-}
+} 
 
-.list {
+/* .list {
     color: white;
-}
+} */
+
 
 li {
-    list-style-type: none
-}
+    list-style-type: none;  
+} 
+
 
 .rounded-circle {
     position: relative;
@@ -110,6 +164,13 @@ li {
     margin-top: -0.8rem;
 }
 
+.btn.btn-default {  
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.363);
+    border-radius: 50%;
+    margin: 7px;
+}
+
 /* .nav-pills .nav-link,
 .nav-item .nav-link,
 .navbar,
@@ -119,18 +180,20 @@ li {
 } */
 
 /* about */
-.card {
+.cardmain {
     /* background-color: green; */
     /* margin: auto; */
     /* width: 100vh; */
     /* height: 350px; */
-    height: 100vh;
+    /* height: 100vh; */
 }
 
-.card-body {
-    background-color: #daa3a3;
-    border: 5px solid rgb(252, 53, 225);
-
+.c-body {
+    background-color: #c5bcbcd0;
+    /* border: 5px solid rgb(252, 53, 225); */
+    height: 100vh;
+    display: block;
+    text-align: center;
 }
 
 .main {
@@ -147,9 +210,50 @@ li {
     /* width: 50px; */
     background-color: rgb(165, 165, 236);
     display: block;
- 
 }
 
-.about{
 
+/* project cards */
+.card-container {
+    display: inline-flex;
+    /* text-align: center; */
+    margin: auto;
+    margin-top: 160px;
+    /* margin-left:50px; */
+}
+
+.col-md-3 {
+    /* margin-right: 80px; */
+}
+
+
+
+.inner-card{
+    border: 2px solid white;
+    width: 280px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.363);
+}
+
+.card-image-top {
+    width: 275px;
+    height: 160px;
+}
+
+#smallIcons {
+    width: 35px;
+    margin-right: 10px;
+
+}
+
+.project-title {
+    margin-top: 15px;
+}
+
+.card-text {
+    margin-top: 25px;
+}
+
+.iconContainer {
+    padding-top: 35px;
 }
