@@ -37,8 +37,15 @@ body {
     font-size: 20px;
     text-transform: uppercase;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 5px;
     margin-bottom: 0;
+}
+
+.myTitle {
+    padding-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
 }
 /* #sidebar.active {
     margin-left: -250px;
