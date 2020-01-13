@@ -286,6 +286,11 @@ li {
 
 /* blogs */
 
+.blog-container {
+    display: -webkit-inline-box;
+}
+
+
 .blog {
     text-align: center;
     padding-top: 70px;
@@ -342,7 +347,7 @@ li {
 .blog-card {
     width: 180px;
     height: 340px;
-    margin-left: 100px;
+    /* margin-left: 100px; */
     margin-bottom: 20px;
     /* transition: all .4s cubic-bezier(0.175, 0.885, 0, 1); */
     background-color: #fff;
